@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Predictor</title>
+</head>
+<body>
+    <h2>Enter Your Information</h2>
+    <form action="/predict" method="post">
+        <label for="Gender">Gender:</label>
+        <select id="Gender" name="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select><br><br>
+
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" min="18" max="24" required><br><br>
+
+        <label for="Course">Course:</label>
+        <select id="Course" name="Course">
+            <option value="Engineering">Engineering</option>
+            <option value="Islamic education">Islamic Education</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Nursing">Nursing</option>
+            <option value="Psychology">Psychology</option>
+            <option value="IT">IT</option>
+            <option value="Biomedical science">Biomedical science</option>
+        </select><br><br>
+
+        <label for="Year_of_Study">Year of Study:</label>
+        <select id="Year_of_Study" name="Year_of_Study">
+            <option value="1">Year 1</option>
+            <option value="2">Year 2</option>
+            <option value="3">Year 3</option>
+            <option value="4">Year 4</option>
+        </select><br><br>
+
+        <label for="CGPA">CGPA:</label>
+        <input type="number" id="CGPA" name="CGPA" step="any" required><br><br>
+
+        <label for="Marital_Status">Marital Status:</label><br>
+        <input type="radio" id="Marital_Status_Yes" name="Marital_Status" value="Yes">
+        <label for="Marital_Status_Yes">Yes</label><br>
+        <input type="radio" id="Marital_Status_No" name="Marital_Status" value="No">
+        <label for="Marital_Status_No">No</label><br><br>
+
+        <label for="Depression">Depression Score:</label><br>
+        <input type="radio" id="Depression_Yes" name="Depression" value="Yes">
+        <label for="Depression_Yes">Yes</label><br>
+        <input type="radio" id="Depression_No" name="Depression" value="No">
+        <label for="Depression_No">No</label><br><br>
+
+        <label for="Anxiety">Anxiety Score:</label><br>
+        <input type="radio" id="Anxiety_Yes" name="Anxiety" value="Yes">
+        <label for="Anxiety_Yes">Yes</label><br>
+        <input type="radio" id="Anxiety_No" name="Anxiety" value="No">
+        <label for="Anxiety_No">No</label><br><br>
+
+        <label for="Panic_Attack">Panic Attack Score:</label><br>
+        <input type="radio" id="Panic_Attack_Yes" name="Panic_Attack" value="Yes">
+        <label for="Panic_Attack_Yes">Yes</label><br>
+        <input type="radio" id="Panic_Attack_No" name="Panic_Attack" value="No">
+        <label for="Panic_Attack_No">No</label><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
